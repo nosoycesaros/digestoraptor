@@ -1,8 +1,8 @@
-![Digestoraptor](https://github.com/nosoycesaros/digestoraptor/blob/main/public/digestoraptor.png?raw=true)
+<img src="https://github.com/nosoycesaros/digestoraptor/blob/main/public/digestoraptor.png?raw=true" width="100">
 
 Digestoraptor is a mini app for [Perspective](https://www.perspective.co/) built with [Next.js](https://nextjs.org/) solving the instructions for [this work sample](https://perspectiveco.notion.site/Work-Sample-Senior-Frontend-Engineer-Cesar-Zapata-e29ccfa7e0494a63a1af1f89e08eb801).
 
-## Getting Started
+## 1️⃣ Getting Started
 
 First, run the development server:
 
@@ -12,11 +12,12 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can fed the digestoraptor with any of the json examples provided in our `/public` directory: [classic example](https://github.com/nosoycesaros/digestoraptor/blob/main/public/funnel.json)
+You can fed the digestoraptor with any of the json examples provided in our `/public` directory:
+* [classic example](https://github.com/nosoycesaros/digestoraptor/blob/main/public/funnel.json)
 
 Edit the values of the funnel using Digestoraptor's live editor.
 
-## Desired Improvements
+## 🚀 Desired Improvements
 
 This is just a proof of concept, and several improvements weren't implemented due to time constraints. These improvements are essential to make the app production-ready:
 
