@@ -20,7 +20,7 @@ const EmptyPage = () => (
         <div className="text-5xl mb-5">
         😶‍🌫️
         </div>
-        <h2 className="text-l mb-5">This page is <span className="font-mono font-bold">empty</span><br />It's data has vanished.</h2>
+        <h2 className="text-l mb-5">This page is <span className="font-mono font-bold">empty</span><br />It&apos;s data has vanished.</h2>
         <p className="text-sm text-gray-400	">Please add some information to this page using the correct format. Check our <a className="text-blue-300" href="/funnel.json">example code</a> for guidelines.</p>
     </div>
 )
