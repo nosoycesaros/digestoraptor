@@ -28,7 +28,6 @@ export default function Funnel() {
         setFunnel(newFunnel)
     }
 
-
     return (
         <main className="min-h-screen flex flex-row items-center justify-between">
             <div className="flex-1 min-h-screen hidden sm:block">

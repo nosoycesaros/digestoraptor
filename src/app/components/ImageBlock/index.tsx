@@ -4,7 +4,7 @@ export type ImageBlockType = {
 }
 
 const ImageBlock = ({ src, alt = "" }: ImageBlockType) => (
-    <img className="rounded-md shadow-md transition-transform transform-gpu hover:-rotate-1" src={src} alt={alt} />
+    <img src={src} alt={alt} className='rounded-md shadow-md transition-transform transform-gpu hover:-rotate-1'/>
 );
 
 export default ImageBlock

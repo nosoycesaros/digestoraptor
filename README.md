@@ -34,5 +34,8 @@ Use loading states to provide user feedback during funnel processing.
 ### Full Inline Editor
 Due to the SessionStorage persistence is not possible to fully edit the funnel with the inline editor.
 
+### Minor Changes
+* Correct usage of `<Image />` component inside `<ImageBlock />`
+
 
 Made with 🫀 by [cesaros](https://cesaros.co/)

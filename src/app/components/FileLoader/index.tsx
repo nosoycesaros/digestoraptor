@@ -1,5 +1,4 @@
 import { Funnel } from "@/app/lib/types";
-import { useState } from "react";
 
 type FileLoaderType = {
     onFileChange: (parsedData: Funnel) => void;
@@ -7,14 +6,14 @@ type FileLoaderType = {
 
 const FileLoader = ({ onFileChange }: FileLoaderType) => {
 
-    const handleFileChange = async (e) => {
+    const handleFileChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
         const input = e.target as HTMLInputElement;
         const file = input.files?.[0];
-
+    
         if (file) {
             try {
-                const fileContent: T = await readFile(file);
-                const parsedData = JSON.parse(fileContent);
+                const fileContent = await readFile(file);
+                const parsedData = JSON.parse(fileContent as string);
                 onFileChange(parsedData);
             } catch (error) {
                 console.error('Error reading or parsing the JSON file:', error);

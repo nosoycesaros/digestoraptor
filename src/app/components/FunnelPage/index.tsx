@@ -15,6 +15,16 @@ type FunnelPageType = {
     page: Page
 }
 
+const EmptyPage = () => (
+    <div className="text-center p-8 bg-white h-full flex  flex-col align-center justify-center">
+        <div className="text-5xl mb-5">
+        😶‍🌫️
+        </div>
+        <h2 className="text-l mb-5">This page is <span className="font-mono font-bold">empty</span><br />It's data has vanished.</h2>
+        <p className="text-sm text-gray-400	">Please add some information to this page using the correct format. Check our <a className="text-blue-300" href="/funnel.json">example code</a> for guidelines.</p>
+    </div>
+)
+
 const FunnelPage = ({ page }: FunnelPageType) => {
     const RenderBlock = ({ type, ...props }: Block) => {
         const BlockComponent = BLOCK_COMPONENTS[type];
@@ -29,9 +39,13 @@ const FunnelPage = ({ page }: FunnelPageType) => {
         </div>)
     };
 
+    if(!page?.id || !page?.blocks) {
+        return <EmptyPage />
+    }
+
     return (
         <div key={page.id} className="p-12 flex flex-col">
-            {page.blocks.map(RenderBlock)}
+            {page?.blocks && page.blocks.map(RenderBlock)}
         </div>
     )
 };
